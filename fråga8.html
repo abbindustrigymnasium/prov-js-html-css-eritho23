@@ -9,6 +9,15 @@
 
     <script>
       // Här ska din JavaScript kod vara
+      function filterEvenNumbers(array) {
+        return array.filter((val) => val % 2 != 0);
+      }
+      let numbers = [12, 25, 37, 43, 59, 61];
+
+      console.log(
+        "The list without even numbers is:",
+        filterEvenNumbers(numbers),
+      );
     </script>
   </body>
 </html>
