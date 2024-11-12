@@ -16,6 +16,13 @@
         { id: 4, firstName: "Jimmie", lastName: "Åkesson" },
         { id: 5, firstName: "Per", lastName: "Bolund" },
       ];
+
+      for (let i = 0; i < politiker.length; i += 1) {
+        let currentPolitiker = politiker[i];
+        console.log(
+          `${currentPolitiker["firstName"]} - ${currentPolitiker["lastName"]}`,
+        ); // This assumes all fields are filled, TypeScript should perhaps be used
+      }
     </script>
   </body>
 </html>
