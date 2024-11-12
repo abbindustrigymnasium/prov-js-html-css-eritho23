@@ -6,9 +6,20 @@
 
   <body>
     <!-- Här ska din HTML kod vara -->
+    <input id="adress" type="text" />
+    <button onclick="showImage()">Update picture</button>
+    <br />
+    <img id="bild" src="" />
 
     <script>
       // Här ska din JavaScript kod vara
+      function showImage() {
+        const imageSource = document.getElementById("adress").value; // get the value of the input field
+
+        const imageElement = document.getElementById("bild"); // find the image element
+
+        imageElement.src = imageSource;
+      }
     </script>
   </body>
 </html>
