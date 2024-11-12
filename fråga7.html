@@ -9,6 +9,20 @@
 
     <script>
       // Här ska din JavaScript kod vara
+      function area(x, y) {
+        return x * y;
+      }
+
+      function volume(x, y, z) {
+        return x * y * z;
+      }
+
+      console.log(
+        `The area of a rectangle with height 4 and width 5 is: ${area(4, 5)}`,
+      );
+      console.log(
+        `The volume of a cuboid with height 7, width 10 and depth 100 000 is: ${volume(7, 10, 100_000)}`,
+      ); // fancy syntax for numbers with 100_000
     </script>
   </body>
 </html>
