@@ -10,12 +10,12 @@
     <script>
       // Här ska din JavaScript kod vara
       function filterEvenNumbers(array) {
-        return array.filter((val) => val % 2 != 0);
+        return array.filter((val) => val % 2 == 0); // ONLY include the even numbers
       }
       let numbers = [12, 25, 37, 43, 59, 61];
 
       console.log(
-        "The list without even numbers is:",
+        "The list without odd numbers is:",
         filterEvenNumbers(numbers),
       );
     </script>
